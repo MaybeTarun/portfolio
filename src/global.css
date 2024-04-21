@@ -289,7 +289,11 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
+
+* {
+    overflow-x: hidden;
+}
 
 .bg img {
     width: 200vw;
@@ -306,18 +310,18 @@
 }
 
 .titlebox {
-    width: 450px;
-    height: 220px;
+    width: 320px;
+    height: 200px;
 }
 
 .title {
-    font-size: 60px;
-    padding: 15px;
+    font-size: 42px;
+    padding: 10px;
 }
 
 .subtitle {
-    font-size: 22px;
-    padding: 15px;
+    font-size: 15px;
+    padding: 10px;
 }
 
 .button button {
@@ -326,20 +330,20 @@
 }
 
 .head {
-    font-size: 25px;
-    padding: 15px 30px;
+    font-size: 18px;
+    padding: 10px 20px;
 }
 
 .aboutbox {
-    width: 480px;
+    width: 120%;
 }
 
 .randomthings img{
-    width: 90%;
+    width: 100%;
 }
 
 .skillbox {
-    width: 480px;
+    width: 120%;
 }
 
 .projectbox {
@@ -347,43 +351,44 @@
 }
 
 .project {
-    width: 350px;
-    height: 300px;
-    margin-left: 1%;
+    width: 300px;
+    height: 250px;
+    margin-left: 10%;
     padding: 10px;
 }
 
 .projectt {
-    margin-left: 25%;
-    width: 350px;
-    height: 300px;
+    margin-left: 27%;
+    width: 300px;
+    height: 250px;
     padding: 10px;
 }
 
 .ptitle {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .pdesc {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .plink {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .plink button {
-    font-size: 15px;
+    font-size: 12px;
     width: 100px;
     padding: 5px;
 }
 
 .designbox {
-    width: 450px;
+    width: 120%;
 }
 
 .socialbox {
-    width: 400px;
+    width: 100%;
+    height: 300px;
 }
 
 }
