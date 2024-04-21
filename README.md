@@ -1,4 +1,4 @@
-##Latest Resume
+## Latest Resume
 
 ## Getting Started with Create React App
 
