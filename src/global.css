@@ -207,6 +207,7 @@
     font-weight: 600;
     font-size: 30px;
     padding: 10px;
+    text-align: center;
 }
 
 .pdesc {
@@ -273,18 +274,68 @@
 
 .socialbox {
     position: relative;
-    width: 1000px;
-    height: 500px;
-    /* background-color: #eeeeee; */
+    width: 700px;
+    height: fit-content;
+    /* border: 5px solid #535870; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
     border: 5px solid #535870;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.social img {
+    width: 80px;
+    /* border-radius: 100%; */
+}
+
+.social img:hover {
+    transform: rotate(-20deg);
+}
+
+.contact {
+    position: relative;
+    width: 700px;
+    height: fit-content;
+    /* border: 5px solid #535870; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.email button {
+    padding: 20px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #ffbe98;
+    border: 5px solid #535870;
+    border-radius: 50px;
+}
 
+.contactext {
+    padding: 20px;
+    font-size: 20px;
+    /* background-color: #FFFFFF;
+    border-radius: 50px; */
+}
+
+.blank {
+    position: relative;
+    width: 10px;
+    height: 300px;
+    /* border: 5px solid #535870; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -335,15 +386,15 @@
 }
 
 .aboutbox {
-    width: 120%;
+    width: 360px;
 }
 
 .randomthings img{
-    width: 100%;
+    width: 90%;
 }
 
 .skillbox {
-    width: 120%;
+    width: 380px;
 }
 
 .projectbox {
@@ -354,14 +405,14 @@
     width: 300px;
     height: 250px;
     margin-left: 10%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .projectt {
     margin-left: 27%;
     width: 300px;
     height: 250px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .ptitle {
