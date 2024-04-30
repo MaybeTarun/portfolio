@@ -1,0 +1,26 @@
+.contact {
+    position: relative;
+    width: 700px;
+    height: fit-content;
+    /* border: 5px solid #EEE2DE; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email button {
+    padding: 20px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #ffbe98;
+    border: 5px solid #EEE2DE;
+    border-radius: 50px;
+}
+
+.contactext {
+    padding: 20px;
+    font-size: 20px;
+    /* background-color: #FFFFFF;
+    border-radius: 50px; */
+}

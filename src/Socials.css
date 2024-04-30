@@ -1,0 +1,17 @@
+.social {
+    border: 5px solid #EEE2DE;
+    background-color: #fff;
+
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.social img {
+    width: 80px;
+    /* border-radius: 100%; */
+}
+
+.social img:hover {
+    transform: rotate(-20deg);
+}
