@@ -1,4 +1,5 @@
 import React from 'react'
+import './Designs.css'
 
 const Designs = () => {
   return (

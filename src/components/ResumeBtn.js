@@ -1,4 +1,5 @@
 import React from 'react'
+import './ResumeBtn.css'
 
 const ResumeBtn = () => {
   return (

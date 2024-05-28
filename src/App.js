@@ -1,20 +1,20 @@
 import React from 'react'
 // import {Route, Routes} from 'react-router-dom';
-import './global.css';
+import './App.css';
 // import bg from './assets/bg.png';
 import me from './assets/me.png';
 import rt from './assets/rt.png';
-import Bg from './Bg.js';
-import Line from './Line.js';
-import About from './About.js';
-import Title from './Title.js';
-import ResumeBtn from './ResumeBtn.js';
-import Skills from './Skills.js';
-import Projects from './Projects.js';
-import Designs from './Designs.js';
-import Socials from './Socials.js';
-import Contact from './Contact.js';
-import Blank from './Blank.js';
+import Bg from './components/Bg.js';
+import Line from './components/Line.js';
+import About from './components/About.js';
+import Title from './components/Title.js';
+import ResumeBtn from './components/ResumeBtn.js';
+import Skills from './components/Skills.js';
+import Projects from './components/Projects.js';
+import Designs from './components/Designs.js';
+import Socials from './components/Socials.js';
+import Contact from './components/Contact.js';
+import Blank from './components/Blank.js';
 
 const App = () => {
   return (

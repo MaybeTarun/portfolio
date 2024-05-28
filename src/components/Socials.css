@@ -1,7 +1,6 @@
 .social {
     border: 5px solid #EEE2DE;
-    background-color: #fff;
-
+    background-color: transparent;
     padding: 10px;
     border-radius: 100%;
     cursor: pointer;
@@ -14,4 +13,10 @@
 
 .social img:hover {
     transform: rotate(-20deg);
+}
+
+@media screen and (max-width: 860px) {
+    .social img {
+        width: 30px;
+    }
 }

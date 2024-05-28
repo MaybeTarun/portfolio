@@ -1,9 +1,9 @@
 import React from 'react'
+import './Bg.css'
 
 const Bg = () => {
   return (
     <div className='bg'>
-        {/* <img src={bg} alt='bro your internet is so slow ;-;'></img> */}
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
