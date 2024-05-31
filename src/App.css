@@ -73,6 +73,10 @@
         overflow-x: hidden;
     }
 
+    .me {
+        margin-top: 70px;
+    }
+
     .me img {
         width: 150px;
     }

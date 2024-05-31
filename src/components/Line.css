@@ -4,9 +4,3 @@
     height: 50px;
     background-color: #EEE2DE;
 }
-
-@media screen and (max-width: 860px) {
-    .line {
-        height: 30px;
-    }
-}
