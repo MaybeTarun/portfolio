@@ -1,0 +1,17 @@
+.designbox {
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    background-color: #A6B1E1;
+    border: 5px solid #EEE2DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 860px) {
+    .designbox {
+        width: 350px;
+    }
+}

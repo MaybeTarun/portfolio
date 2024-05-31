@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Comfortaa", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Metrophobic", sans-serif;
     font-weight: 400;
     font-style: normal;
+    transition: 1s;
     /* background-color: #090a0f; */
+}
+
+*::selection {
+    background: #97FEED;
 }
 
 ::-webkit-scrollbar {
@@ -27,22 +30,6 @@
     padding: 40px;
 }
 
-.line {
-    position: relative;
-    width: 5px;
-    height: 50px;
-    background-color: #EEE2DE;
-}
-
-.line2 {
-    position: relative;
-    width: 5px;
-    height: 50px;
-    background-color: #EEE2DE;
-    left: 50%;
-    transform: translate(-50%);
-}
-
 .me img {
     margin-top: 15%;
     position: relative;
@@ -52,18 +39,6 @@
     cursor: pointer;
 }
 
-.aboutbox {
-    position: relative;
-    width: 900px;
-    height: 600px;
-    background-color: #eeeeee;
-    border: 5px solid #EEE2DE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
 .randomthings {
     display: flex;
     justify-content: center;
@@ -73,19 +48,7 @@
 
 .randomthings img {
     position: relative;
-}
-
-.skillbox {
-    position: relative;
-    width: 1100px;
-    height: 800px;
-    background-color: #ffbe98;
-    border: 5px solid #EEE2DE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+    width: 50%;
 }
 
 .head {
@@ -97,97 +60,30 @@
     font-family: "Rowdies", sans-serif;
     font-weight: 700;
     font-style: normal;
-    background-color: #FFA372;
+    /* background-color: #ED6663; */
+    background-image: linear-gradient(to right, #97FEED , #35A29F);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #151b22;
 }
-
-.projectbox {
-    position: relative;
-    width: 1000px;
-}
-
-.designbox {
-    position: relative;
-    width: 1000px;
-    height: 800px;
-    background-color: #A6B1E1;
-    border: 5px solid #EEE2DE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.socialbox {
-    position: relative;
-    width: 700px;
-    height: fit-content;
-    /* border: 5px solid #EEE2DE; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.blank {
-    position: relative;
-    width: 10px;
-    height: 300px;
-    /* border: 5px solid #EEE2DE; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 
 @media screen and (max-width: 860px) {
 
-* {
-    overflow-x: hidden;
-}
+    .cv {
+        overflow-x: hidden;
+    }
 
-.me img {
-    width: 150px;
-}
+    .me img {
+        width: 150px;
+    }
 
-.line {
-    height: 30px;
-}
+    .head {
+        font-size: 18px;
+        padding: 10px 20px;
+        -webkit-text-stroke-width: 0.5px;
+    }
 
-.button button {
-    width: 150px;
-    font-size: 17px;
-}
-
-.head {
-    font-size: 18px;
-    padding: 10px 20px;
-}
-
-.aboutbox {
-    width: 360px;
-}
-
-.randomthings img{
-    width: 80%;
-}
-
-.skillbox {
-    width: 380px;
-}
-
-.designbox {
-    width: 120%;
-}
-
-.socialbox {
-    width: 100%;
-    height: fit-content;
-}
-
-.blank {
-    height: 250px;
-}
+    .randomthings img{
+        width: 80%;
+    }
 
 }

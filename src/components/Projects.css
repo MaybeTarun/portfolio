@@ -1,3 +1,8 @@
+.projectbox {
+    position: relative;
+    width: 1000px;
+}
+
 /* 3 */
 .project { 
     margin-left: 5%;
@@ -9,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    transition: 0.5s;
     padding: 20px;
 }
 
@@ -47,7 +52,7 @@
     font-size: 20px;
     padding: 10px;
     border: 2px solid #EEE2DE;
-
+    transition: 0s;
 }
 
 .plink button:hover {
@@ -65,13 +70,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     padding: 20px;
 }
 
 /* 2 */
 .projectt:nth-child(3) {
     background-color: #a76bdc;
+}
+
+.line2 {
+    position: relative;
+    width: 5px;
+    height: 50px;
+    background-color: #EEE2DE;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 @media screen and (max-width: 860px) {
@@ -109,5 +122,9 @@
         font-size: 12px;
         width: 100px;
         padding: 5px;
+    }
+
+    .line2 {
+        height: 30px;
     }
 }

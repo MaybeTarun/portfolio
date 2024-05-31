@@ -16,6 +16,7 @@
     background: #ffbe98;
     border: 5px solid #EEE2DE;
     border-radius: 50px;
+    transition: 0s;
 }
 
 .contactext {
@@ -26,8 +27,13 @@
     border-radius: 50px; */
 }
 
+.contactext::selection {
+    color: black;
+}
+
 .email button:hover {
-    color: white;
+    /* color: white; */
+    transform: scale(105%);
 }
 
 @media screen and (max-width: 860px) {

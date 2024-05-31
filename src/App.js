@@ -1,7 +1,6 @@
 import React from 'react'
 // import {Route, Routes} from 'react-router-dom';
 import './App.css';
-// import bg from './assets/bg.png';
 import me from './assets/me.png';
 import rt from './assets/rt.png';
 import Bg from './components/Bg.js';
@@ -15,6 +14,7 @@ import Designs from './components/Designs.js';
 import Socials from './components/Socials.js';
 import Contact from './components/Contact.js';
 import Blank from './components/Blank.js';
+import Achievements from './components/Achievements.js';
 
 const App = () => {
   return (
@@ -61,6 +61,15 @@ const App = () => {
             <Line/>
             <Line/>
 
+            <div className='head'>Achievements</div>
+
+            <Line/>
+
+            <Achievements/>
+
+            <Line/>
+            <Line/>
+
             <div className='head'>Some Projects I did</div>
 
             <Line/>
@@ -71,7 +80,7 @@ const App = () => {
             <Line/>
             <Line/>
 
-            <div className='head'>I design stuff when I'm bored</div>
+            <div className='head'>Random stuff I designed</div>
 
             <Line/>
 

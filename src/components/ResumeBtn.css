@@ -2,12 +2,14 @@
     position: relative;
     display: inline-block;
     border-radius: 50px;
-    background: #ED6663;
+    /* background: #35A29F; */
+    background-image: linear-gradient(to right, #97FEED , #35A29F);
     border: 3px solid #EEE2DE;
     color: #FFFFFF;
     text-align: center;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: bold;
     padding: 15px;
     width: 250px;
     transition: all 0.5s;

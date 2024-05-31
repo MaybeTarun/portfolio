@@ -1,0 +1,53 @@
+.achievementbox{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: #A6B1E1; */
+    border: 5px solid #EEE2DE;
+    border-right-style: none;
+    border-left-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.badges img {
+    width: 150px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.badges img:hover {
+    cursor: pointer;
+    transform: scale(90%);
+}
+
+.certs img {
+    padding: 10px;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.certs img:hover {
+    cursor: pointer;
+    transform: scale(90%);
+}
+
+@media screen and (max-width: 860px) {
+    .badges img {
+        width: 100px;
+    }
+
+    .certs img {
+        width: 250px;
+    }
+}
