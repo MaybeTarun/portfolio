@@ -5,29 +5,29 @@ import { motion } from "framer-motion"
 const Projects = () => {
   return (
     <div className='projectbox'>
-        <motion.div className='project' initial={{ scale: 0.9 }} whileInView={{ scale: 1 }} transition={{duration:0}}>
-            <div className='ptitle'>Concrete Damage Detector</div>
+        <div className='project'>
+            <motion.div className='ptitle' initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0}}>Concrete Damage Detector</motion.div>
             <div className='pdesc'>Implemented a Deep Learning model using YOLO-v8 which can detect and segment damages on concrete surfaces in real-time and help maintain strength and integrity of buildings. The model is trained on a custom dataset made using Roboflow.</div>
             <div className='plink'><a href='https://github.com/MaybeTarun/Concrete-Damage-Detector' target='_blank' rel="noreferrer"><button>Link</button></a></div>
-        </motion.div>
+        </div>
         <div className='line2'></div>
-        <motion.div className='projectt' initial={{ scale: 0.9 }} whileInView={{ scale: 1 }} transition={{duration:0}}>
-            <div className='ptitle'>Cognify</div>
+        <div className='projectt'>
+            <motion.div className='ptitle' initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0}}>Cognify</motion.div>
             <div className='pdesc'>Developed a cloud based learning platform using Kotlin and XML that automates learning methods making it easy for the user to learn and understand things. It uses OpenAI as its AI model.</div>
             <div className='plink'><a href='https://maybetarun.github.io/CognifyWebsite.github.io/' target='_blank' rel="noreferrer"><button>Link</button></a></div>
-        </motion.div>
+        </div>
         <div className='line2'></div>
-        <motion.div className='project' initial={{ scale: 0.9 }} whileInView={{ scale: 1 }} transition={{duration:0}}>
-            <div className='ptitle'>Foresty</div>
+        <div className='project'>
+            <motion.div className='ptitle' initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0}}>Foresty</motion.div>
             <div className='pdesc'>Created a user-friendly platform that helps users in finding vulnerabilities (such as open ports) in their websites which anyone could have used to hack them. It uses a shell script which automates the process of vulnerability assessment.</div>
             <div className='plink'><a href='https://maybetarun.github.io/Foresty/' target='_blank' rel="noreferrer"><button>Link</button></a></div>
-        </motion.div>
+        </div>
         <div className='line2'></div>
-        <motion.div className='projectt' initial={{ scale: 0.9 }} whileInView={{ scale: 1 }} transition={{duration:0}}>
-            <div className='ptitle'>More Projects</div>
+        <div className='projectt'>
+            <motion.div className='ptitle' initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0}}>More Projects</motion.div>
             <div className='pdesc'>I love to make random projects and websites which u can check out on my github.</div>
             <div className='plink'><a href='https://github.com/MaybeTarun/' target='_blank' rel="noreferrer"><button>Link</button></a></div>
-        </motion.div>
+        </div>
     </div>
   )
 }

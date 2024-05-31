@@ -13,10 +13,10 @@
     padding: 20px 50px;
     font-size: 20px;
     cursor: pointer;
-    background: #ffbe98;
+    background-image: linear-gradient(to right, #97FEED , #35A29F);
     border: 5px solid #EEE2DE;
     border-radius: 50px;
-    transition: 0s;
+    transition: 0.5s;
 }
 
 .contactext {
@@ -33,7 +33,7 @@
 
 .email button:hover {
     /* color: white; */
-    transform: scale(105%);
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 860px) {

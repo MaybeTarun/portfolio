@@ -15,6 +15,8 @@ import Socials from './components/Socials.js';
 import Contact from './components/Contact.js';
 import Blank from './components/Blank.js';
 import Achievements from './components/Achievements.js';
+import {motion} from "framer-motion"
+
 
 const App = () => {
   return (
@@ -45,14 +47,14 @@ const App = () => {
 
             <Line/>
 
-            <div className='randomthings'>
+            <motion.div className='randomthings'>
                 <img src={rt} alt='some things about me'></img>
-            </div>
+            </motion.div>
 
             <Line/>
             <Line/>
 
-            <div className='head'>What can I Do?</div>
+            <div className='head'>Skills</div>
 
             <Line/>
 

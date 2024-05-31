@@ -1,17 +1,41 @@
 .designbox {
     position: relative;
     width: 1000px;
-    height: 800px;
-    background-color: #A6B1E1;
+    height: fit-content;
+    /* background-color: #fff; */
     border: 5px solid #EEE2DE;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.design {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+
+.designbox img {
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #EEE2DE;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 20px 25px -5px, rgba(255, 255, 255, 0.04) 0px 10px 10px -5px;
+    transition: 0s;
+}
+
+.designbox img:hover {
+    transform: scale(0.9);
 }
 
 @media screen and (max-width: 860px) {
     .designbox {
-        width: 350px;
+        width: 380px;
     }
 }

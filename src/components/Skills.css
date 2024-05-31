@@ -1,17 +1,44 @@
 .skillbox {
     position: relative;
     width: 1100px;
-    height: 800px;
+    height: fit-content;
     background-color: #0B666A;
     border: 5px solid #EEE2DE;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
+    padding: 20px;
+}
+
+.skillbar {
+    padding: 20px;
+    margin: 10px;
+    background-color: #35A29F;
+    position: relative;
+}
+
+.skillname {
+    color: #fff;
+    font-size: 20px;
+}
+
+.skillname::selection {
+    color: black;
 }
 
 @media screen and (max-width: 860px) {
     .skillbox {
         width: 380px;
+        padding: 5px;
+    }
+
+    .skillbar {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .skillname {
+        font-size: 10px;
     }
 }

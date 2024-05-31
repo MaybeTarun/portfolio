@@ -60,10 +60,11 @@
     font-family: "Rowdies", sans-serif;
     font-weight: 700;
     font-style: normal;
-    /* background-color: #ED6663; */
-    background-image: linear-gradient(to right, #97FEED , #35A29F);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #151b22;
+    /* background-color: #071952; */
+    background-image: linear-gradient(to top, #071952 , #0d0d0d);
+    border-radius: 50px;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #151b22; */
 }
 
 @media screen and (max-width: 860px) {
