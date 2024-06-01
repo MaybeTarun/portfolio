@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css';
 import me2 from '../assets/me2.jpg';
-import {delay, motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 
 const About = () => {
   return (

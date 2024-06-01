@@ -17,7 +17,6 @@ import Blank from './components/Blank.js';
 import Achievements from './components/Achievements.js';
 import {motion} from "framer-motion"
 
-
 const App = () => {
   return (
     <>
