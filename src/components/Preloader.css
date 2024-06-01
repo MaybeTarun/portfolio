@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.preloader {
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.texts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    max-width: 600px;
+    width: 65%;
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+    color: #fff;
+}
+
+.texts-container span {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.texts-container span.slide-down {
+    animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .texts-container {
+        font-size: 15px;
+        width: 90%;
+    }
+}

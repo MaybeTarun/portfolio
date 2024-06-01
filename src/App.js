@@ -16,10 +16,14 @@ import Contact from './components/Contact.js';
 import Blank from './components/Blank.js';
 import Achievements from './components/Achievements.js';
 import {motion} from "framer-motion"
+import Preloader from './components/Preloader.js';
 
 const App = () => {
   return (
     <>
+
+        <Preloader/>
+
         <Bg/>
 
         <div className='cv'>

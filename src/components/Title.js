@@ -5,7 +5,7 @@ const Title = () => {
   return (
     <div className='titlebox'>
         <div className='title'>TARUN GUPTA</div>
-        <div className='subtitle'>Software Developer and Designer</div>
+        <div className='subtitle'>Software Developer & Designer</div>
     </div>
   )
 }
