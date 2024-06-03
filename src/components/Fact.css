@@ -1,0 +1,83 @@
+.fact {
+    position: relative;
+    width: fit-content;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 15px;
+    top: -715vh;
+    left: 80vw;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303237;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 5px;
+    border-radius: 10px;
+}
+
+.copy input {
+    font-size: 15px;
+    padding: 10px;
+    width: 180px;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+}
+
+.copy input::selection {
+    color: black;
+}
+
+.copy button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    /* margin-top: 2.65px; */
+    padding: 5px 5px 2.35px 5px;
+    border-radius: 5px;
+}
+
+.copy button:hover {
+    background-color: #595b5f;
+}
+
+.copy button img{
+    width: 20px;
+}
+
+.popup {
+    position: absolute;
+    top: -15px;
+    left: 88%;
+    transform: translateX(-50%);
+    background-color: #595b5f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: fadeinout 2s;
+    font-size: 10px;
+  }
+  
+  @keyframes fadeinout {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+@media screen and (max-width: 1200px) {
+    .fact {
+        visibility: hidden;
+    }
+}

@@ -19,6 +19,7 @@ import Blank from './components/Blank.js';
 import Achievements from './components/Achievements.js';
 import Preloader from './components/Preloader.js';
 import Footer from './components/Footer.js';
+import Fact from './components/Fact.js';
 
 const App = () => {
   return (
@@ -110,6 +111,8 @@ const App = () => {
         </div>
 
         <Footer/>
+
+        <Fact/>
     </>
   )
 }
