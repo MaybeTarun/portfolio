@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+.footer {
+    width: 100vw;
+    height: 35vh;
+    background-color: #0B666A;
+    padding: 25px;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+}
+
+.eyebox {
+    position: absolute;
+    /* height: 100px; */
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 100px;
+}
+
+.eye {
+    width: 200px;
+    height: 200px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eyeball {
+    width: 130px;
+    height: 130px;
+    background-color: #0d0d0d;
+    border-radius: 50%;
+    position: relative;
+}
+
+.eyeline {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    transition: 0s;
+    /* background-color: red; */
+}
+
+.eyeball2 {
+    width: 30px;
+    height: 30px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+}

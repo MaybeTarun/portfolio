@@ -1,5 +1,7 @@
 import React from 'react'
 // import {Route, Routes} from 'react-router-dom';
+import {motion} from "framer-motion"
+
 import './App.css';
 import me from './assets/me.png';
 import rt from './assets/rt.png';
@@ -15,8 +17,8 @@ import Socials from './components/Socials.js';
 import Contact from './components/Contact.js';
 import Blank from './components/Blank.js';
 import Achievements from './components/Achievements.js';
-import {motion} from "framer-motion"
 import Preloader from './components/Preloader.js';
+import Footer from './components/Footer.js';
 
 const App = () => {
   return (
@@ -106,6 +108,8 @@ const App = () => {
             <Blank/>
 
         </div>
+
+        <Footer/>
     </>
   )
 }
