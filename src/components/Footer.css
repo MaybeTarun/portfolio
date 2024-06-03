@@ -54,3 +54,24 @@
     background-color: #eeeeee;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 860px) {
+    .eye {
+        width: 120px;
+        height: 120px;
+    }
+
+    .eyeball {
+        width: 80px;
+        height: 80px;
+    }
+
+    .eyeline {
+        height: 20px;
+    }
+
+    .eyeball2 {
+        width: 20px;
+        height: 20px;
+    }
+}

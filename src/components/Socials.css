@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 860px) {
     .socialbox {
-        width: 450px;
+        width: 380px;
         height: fit-content;
     }
     .social img {
