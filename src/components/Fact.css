@@ -1,6 +1,7 @@
 .fact {
     position: relative;
     width: fit-content;
+    height: 0;
     color: #fff;
     display: flex;
     justify-content: center;
