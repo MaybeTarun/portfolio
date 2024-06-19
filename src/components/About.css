@@ -74,7 +74,7 @@
 
 .right img {
     margin-right: -50px;
-    width: 350px;
+    width: 330px;
     transition: 0.5s;
     border: 5px solid #97FEED;
     transform: rotate(-5deg) scale(1.1);
@@ -113,6 +113,5 @@
 
     .right img {
         width: 300px;
-        margin-right: -100px;
     }
 }

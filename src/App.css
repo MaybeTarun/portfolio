@@ -67,6 +67,10 @@
     -webkit-text-stroke-color: #151b22; */
 }
 
+.head::selection {
+    color: #0d0d0d;
+}
+
 @media screen and (max-width: 860px) {
 
     .cv {
