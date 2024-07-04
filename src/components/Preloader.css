@@ -52,6 +52,11 @@
 }
 
 @media screen and (max-width: 860px) {
+
+    .preloader {
+        top: -50px;
+    }
+
     .texts-container {
         font-size: 15px;
         width: 90%;
