@@ -1,6 +1,7 @@
 import React from 'react'
 // import {Route, Routes} from 'react-router-dom';
 import {motion} from "framer-motion"
+import { Analytics } from "@vercel/analytics/react"
 
 import './App.css';
 import me from './assets/me.png';
@@ -24,6 +25,8 @@ import Fact from './components/Fact.js';
 const App = () => {
   return (
     <>
+
+    <Analytics></Analytics>
 
         <Preloader/>
 
