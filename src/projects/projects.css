@@ -1,0 +1,16 @@
+
+.app {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0d;
+    padding: 2rem;
+    color: #fff;
+}
+
+.heading {
+    font-size: 1.5rem;
+}
