@@ -45,7 +45,9 @@ const Projects = () => {
       setDiceImage(randomImage);
     }
     if (videoRefs.current[index]) {
-      videoRefs.current[index].play();
+      videoRefs.current[index].play().catch(error => {
+        console.log('Failed to play the video:', error);
+      });
     }
   };
 

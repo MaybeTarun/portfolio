@@ -24,7 +24,7 @@ const Skills = () => {
         <motion.div className='skillbar' initial={{ width: '50%' }} whileInView={{ width: '78%' }} transition={{ ease: backInOut }}>
           <div className='skillname'>UI/UX Desiging [ Figma, Photoshop ]</div>
         </motion.div>
-        <motion.div className='skillbar' initial={{ width: '50%' }} whileInView={{ width: '125%' }} transition={{ ease: backInOut }}>
+        <motion.div className='skillbar' initial={{ width: '50%' }} whileInView={{ width: '120%' }} transition={{ ease: backInOut }}>
           <div className='skillname'>Making Random Jokes . . .</div>
         </motion.div>
     </div>

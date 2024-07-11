@@ -34,7 +34,7 @@
 .me img {
     margin-top: 15%;
     position: relative;
-    width: 200px;
+    width: 180px;
     border-radius: 100%;
     margin-bottom: -3.5px;
     cursor: pointer;
@@ -55,8 +55,8 @@
 .head {
     position: relative;
     border: 5px solid #EEE2DE;
-    padding: 20px 40px;
-    font-size: 40px;
+    padding: 15px 40px;
+    font-size: 30px;
     color: #EEE2DE;
     font-family: "Rowdies", sans-serif;
     font-weight: 700;
