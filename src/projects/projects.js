@@ -10,6 +10,9 @@ const Projects = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
+
+    window.scrollTo(0, 0);
+    
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };

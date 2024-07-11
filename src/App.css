@@ -10,6 +10,7 @@
     font-style: normal;
     transition: 1s;
     /* background-color: #090a0f; */
+    scroll-behavior: smooth;
 }
 
 *::selection {
