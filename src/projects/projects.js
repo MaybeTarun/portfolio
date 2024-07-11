@@ -1,18 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './projects.css';
 import data from './data';
 import spree2 from '../assets/spree2.png';
+import die1 from '../assets/die1.png';
+import die2 from '../assets/die2.png';
+import die3 from '../assets/die3.png';
+import die4 from '../assets/die4.png';
+import die5 from '../assets/die5.png';
+import die6 from '../assets/die6.png';
 
 const Projects = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [hoveredCardId, setHoveredCardId] = useState(null);
+  const [hoveredCardName, setHoveredCardName] = useState(null);
   const [rotateDirection, setRotateDirection] = useState(true);
   const [showPopup, setShowPopup] = useState(false);
+  const [diceImage, setDiceImage] = useState(null);
+  const videoRefs = useRef({});
+
+  const diceImages = [die1, die2, die3, die4, die5, die6];
 
   useEffect(() => {
-
     window.scrollTo(0, 0);
-    
+
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
@@ -24,22 +33,39 @@ const Projects = () => {
     };
   }, []);
 
-  const handleMouseEnter = (index) => {
-    if (index === 10) {
-      setHoveredCardId(index);
+  const handleMouseEnter = (name, index) => {
+    if (name === 'Spree') {
+      setHoveredCardName(name);
     }
-    if (index === 9) {
+    if (name === 'Sentiment Analyzer') {
       setShowPopup(true);
+    }
+    if (name === 'Dice Simulator') {
+      const randomImage = diceImages[Math.floor(Math.random() * diceImages.length)];
+      setDiceImage(randomImage);
+    }
+    if (videoRefs.current[index]) {
+      videoRefs.current[index].play();
     }
   };
 
-  const handleMouseLeave = () => {
-    setHoveredCardId(null);
+  const handleMouseLeave = (index) => {
+    setHoveredCardName(null);
     setShowPopup(false);
+    setDiceImage(null);
+    if (videoRefs.current[index]) {
+      videoRefs.current[index].pause();
+      videoRefs.current[index].currentTime = 0;
+    }
   };
 
   const handleBtnMouseEnter = () => {
     setRotateDirection((prevDirection) => !prevDirection);
+  };
+
+  const isVideo = (src) => {
+    const videoExtensions = ['.mp4', '.webm', '.ogg'];
+    return videoExtensions.some(extension => src.endsWith(extension));
   };
 
   return (
@@ -61,27 +87,36 @@ const Projects = () => {
         }}
       />
       <div className='heading'>
-        <h1>Projects</h1>
+        <h1>My Projects</h1>
       </div>
       <div className='container'>
         {data.map((item, index) => (
-          <div className='card' key={index}>
+          <div className='card' key={item.name}>
             <div className='cardhead'>
-              {item.image.endsWith('.mp4') ? (
-                <video width="100%" height="auto" controls>
-                  <source src={item.image} type="video/mp4" />
+              {isVideo(item.image) ? (
+                <video
+                  ref={(el) => (videoRefs.current[index] = el)}
+                  width="100%"
+                  height="auto"
+                  controls
+                  src={item.image}
+                  onMouseEnter={() => handleMouseEnter(item.name, index)}
+                  onMouseLeave={() => handleMouseLeave(index)}
+                >
                   Your browser does not support the video tag.
                 </video>
               ) : (
                 <img
                   src={
-                    index === 10 && hoveredCardId === 10
+                    item.name === 'Spree' && hoveredCardName === 'Spree'
                       ? spree2
+                      : item.name === 'Dice Simulator' && diceImage
+                      ? diceImage
                       : item.image
                   }
                   alt={item.name}
-                  onMouseEnter={() => handleMouseEnter(index)}
-                  onMouseLeave={handleMouseLeave}
+                  onMouseEnter={() => handleMouseEnter(item.name, index)}
+                  onMouseLeave={() => handleMouseLeave(index)}
                 />
               )}
             </div>

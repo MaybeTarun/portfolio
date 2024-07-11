@@ -5,14 +5,14 @@ import aaargh from "../assets/img4.mp4";
 import finance from "../assets/finance.png";
 import knowabout from "../assets/knowabout.png";
 import colorizer from "../assets/colorizer.png";
-import holostry from "../assets/soon.png";
+import holostry from "../assets/holostry.mp4";
 import payback from "../assets/payback.png";
 import sentiment from "../assets/sentiment.png";
 import spree from "../assets/spree.png";
 import dad from "../assets/dad.png";
-import calculator from "../assets/soon.png";
+import calculator from "../assets/calculator.png";
 import bank from "../assets/soon.png";
-import dice from "../assets/soon.png";
+import dice from "../assets/dice.png";
 
 const data = [
     {
@@ -108,7 +108,7 @@ const data = [
     },
     {
       name: `Bank Management System`,
-      desc: `Built this with python as a school project. It is very basic but it is one of my first coding projects that worked just how I wanted it to be. So it is very close to my heart.`,
+      desc: `Built a very basic bank management system using python and mysql for a school project. It's one of my first school projects.`,
       link: `https://github.com/MaybeTarun/Bank-Management-Project`,
       skills: [`Numpy`, `Pandas`, `MySQL`],
       image: bank
