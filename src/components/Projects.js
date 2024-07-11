@@ -27,13 +27,8 @@ const Projects = () => {
       <div className='projectt'>
         <motion.div className='ptitle' initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0}}>More Projects</motion.div>
         <div className='pdesc'>I love to make random projects and websites which u can check out by clicking on the button below</div>
-        <div className='plink'><a href='https://all-projects-lovat.vercel.app/' target='_blank' rel="noreferrer"><button>Link</button></a></div>
-      </div>
-      {/* <div className='projectt'>
-        <motion.div className='ptitle' initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0}}>More Projects</motion.div>
-        <div className='pdesc'>I love to make random projects and websites which u can check out by clicking on the button below</div>
         <div className='plink'><Link to='/projects'><button>Link</button></Link></div>
-      </div> */}
+      </div>
     </div>
   );
 }
