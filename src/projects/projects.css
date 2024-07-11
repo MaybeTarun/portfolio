@@ -64,6 +64,10 @@
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
+.cardhead video {
+    transition: transform 0.5s ease;
+}
+
 .cardhead img:hover {
     transform: scale(97%) translateY(-20px);
 }
