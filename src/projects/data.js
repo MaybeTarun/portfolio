@@ -46,7 +46,7 @@ const data = [
     {
       name: `Finance Tracker`,
       desc: `An MERN stack application for tracking personal finances. Uses Clerk for user management`,
-      link: `https://financetracker-five.vercel.app/`,
+      link: `https://financetracker-neon.vercel.app/`,
       skills: [`React`, `MongoDB`],
       image: finance
     },
