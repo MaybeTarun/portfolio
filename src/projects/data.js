@@ -23,6 +23,13 @@ const data = [
       image: concrete
     },
     {
+      name: `Aaargh!`,
+      desc: `Game inspired by Flappy Bird. The player is controlled by making weird noises like "aaaah" or "aargh".`,
+      link: `https://aaargh.vercel.app/`,
+      skills: [`React`],
+      image: aaargh
+    },
+    {
       name: `Cognify`,
       desc: `Developed a cloud based learning platform using Kotlin and XML that automates learning methods making it easy for the user to learn and understand things. It uses OpenAI as its AI model.`,
       link: `https://github.com/MaybeTarun/Cognify`,
@@ -35,13 +42,6 @@ const data = [
       link: `https://github.com/MaybeTarun/Foresty`,
       skills: [`HTML`, `CSS`, `Javascript`, `Shell`],
       image: foresty
-    },
-    {
-      name: `Aaargh!`,
-      desc: `Game inspired by Flappy Bird. The player is controlled by making weird noises like "aaaah" or "aargh".`,
-      link: `https://aaargh.vercel.app/`,
-      skills: [`React`],
-      image: aaargh
     },
     {
       name: `Finance Tracker`,

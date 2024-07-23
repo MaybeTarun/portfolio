@@ -84,6 +84,18 @@ const App = () => {
           </>
         } />
         <Route path="/projects" element={<AllProjects />} />
+        <Route path="/projects/aaargh" element={
+          <div style={{ height: '100vh', width: '100vw', margin: 0, padding: 0, overflow: 'hidden' }}>
+            <iframe
+              src="https://aaargh.vercel.app"
+              title='aaargh!'
+              width="100%"
+              height="100%"
+              allowFullScreen
+              style={{ border: 'none' }}
+            ></iframe>
+          </div>
+        } />
       </Routes>
 
       <AudioPlayer
