@@ -11,7 +11,7 @@ import sentiment from "../assets/sentiment.png";
 import spree from "../assets/spree.png";
 import dad from "../assets/dad.png";
 import calculator from "../assets/calculator.png";
-import bank from "../assets/soon.png";
+import bank from "../assets/bank.png";
 import dice from "../assets/dice.png";
 
 const data = [
@@ -25,7 +25,7 @@ const data = [
     {
       name: `Aaargh!`,
       desc: `Game inspired by Flappy Bird. The player is controlled by making weird noises like "aaaah" or "aargh".`,
-      link: `https://aaargh.vercel.app/`,
+      link: `https://www.maybetarun.in/projects/aaargh`,
       skills: [`React`],
       image: aaargh
     },

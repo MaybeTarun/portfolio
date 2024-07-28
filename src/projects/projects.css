@@ -152,7 +152,7 @@
 .more {
     font-size: 2rem;
     text-align: center;
-    padding: 55% 0px;
+    padding: 60% 0px;
 }
 
 .more::selection {
@@ -186,5 +186,9 @@
     .popuptext {
         font-size: 0.9rem;
         width: 200px;
+    }
+    .more {
+        font-size: 1.5rem;
+        padding: 55% 0px;
     }
 }
