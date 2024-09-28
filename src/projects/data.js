@@ -1,4 +1,4 @@
-import concrete from "../assets/soon.png";
+import concrete from "../assets/concrete.png";
 import cognify from "../assets/cognify.png";
 import foresty from "../assets/foresty.png";
 import aaargh from "../assets/img4.mp4";
