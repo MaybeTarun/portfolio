@@ -3,6 +3,7 @@ import cognify from "../assets/cognify.png";
 import foresty from "../assets/foresty.png";
 import aaargh from "../assets/img4.mp4";
 import finance from "../assets/finance.png";
+import roshni from "../assets/roshni.png";
 import knowabout from "../assets/knowabout.png";
 import colorizer from "../assets/colorizer.png";
 import holostry from "../assets/holostry.mp4";
@@ -42,6 +43,13 @@ const data = [
       link: `https://github.com/MaybeTarun/Foresty`,
       skills: [`HTML`, `CSS`, `Javascript`, `Shell`],
       image: foresty
+    },
+    {
+      name: `Roshni Sinks`,
+      desc: `An E-Commerce platform for a manufacturing business "Roshni". Still under development`,
+      link: `https://roshnisinks.vercel.app/`,
+      skills: [`React`],
+      image: roshni
     },
     {
       name: `Finance Tracker`,
