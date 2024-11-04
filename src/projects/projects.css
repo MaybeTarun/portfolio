@@ -40,6 +40,7 @@
     margin: 1rem;
     margin-top: 2rem;
     z-index: 1;
+    overflow: visible;
 }
 
 .card {
@@ -51,6 +52,7 @@
     border: 1px dotted #626262;
     z-index: 1;
     transition: opacity 1s ease;
+    overflow: visible;
 }
 
 .card:hover {
@@ -58,8 +60,12 @@
     box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
 }
 
-.container .card:nth-child(9) .cardhead img:hover {
+.container .card:nth-child(10) .cardhead img:hover {
     opacity: 0.3;
+}
+
+.cardhead {
+    overflow: visible;
 }
 
 .cardhead img {
@@ -93,6 +99,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: visible;
 }
 
 .name p {

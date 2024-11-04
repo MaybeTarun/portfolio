@@ -9,6 +9,7 @@
     align-items: left;
     flex-direction: column;
     padding: 20px;
+    overflow-x: visible;
 }
 
 .skillbar {

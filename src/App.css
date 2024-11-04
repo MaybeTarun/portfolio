@@ -11,6 +11,7 @@
     transition: 1s;
     /* background-color: #090a0f; */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *::selection {
@@ -32,7 +33,7 @@
 }
 
 .me img {
-    margin-top: 15%;
+    margin-top: 20%;
     position: relative;
     width: 180px;
     border-radius: 100%;
@@ -76,10 +77,11 @@
 
     .cv {
         overflow-x: hidden;
+        padding: 20px;
     }
 
     .me {
-        margin-top: 70px;
+        margin-top: 30%;
     }
 
     .me img {
@@ -96,4 +98,8 @@
         width: 80%;
     }
 
+}
+
+footer {
+    overflow: visible;
 }

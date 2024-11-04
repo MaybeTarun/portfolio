@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Footer.css'
+import smile from '../assets/smile.svg';
 
 const Footer = () => {
 
@@ -36,6 +37,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <div className='smilee'><img src={smile} alt='smile'></img></div>
         </div>
     </footer>
   )

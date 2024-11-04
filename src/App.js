@@ -55,7 +55,7 @@ const App = () => {
               <Skills />
               <Line />
               <Line />
-              <div className='head'>Achievements</div>
+              <div className='head'>Some Achievements</div>
               <Line />
               <Achievements />
               <Line />

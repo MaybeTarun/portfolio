@@ -19,6 +19,7 @@
     padding: 20px;
     padding-top: 10px;
     background-color: #fff;
+    text-align: center;
 }
 
 .subtitle {
@@ -29,6 +30,7 @@
     padding: 20px;
     padding-top: 10px;
     background-color: #fff;
+    text-align: center;
 }
 
 @media screen and (max-width: 860px) {

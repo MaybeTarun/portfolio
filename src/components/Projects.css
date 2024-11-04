@@ -1,6 +1,7 @@
 .projectbox {
     position: relative;
     width: 1000px;
+    overflow: visible;
 }
 
 /* 3 */
@@ -16,6 +17,7 @@
     flex-direction: column;
     transition: 0.5s;
     padding: 20px;
+    overflow: visible;
 }
 
 /* 1 */
@@ -52,6 +54,7 @@
 
 .plink {
     padding-top: 20px;
+    overflow: visible;
 }
 
 .plink button{
@@ -65,10 +68,12 @@
     padding: 10px;
     border: 2px solid #EEE2DE;
     transition: 0s;
+    overflow: visible;
 }
 
 .plink button:hover {
     transform: rotate(-10deg);
+    overflow: visible;
 }
 
 /* 4 */
