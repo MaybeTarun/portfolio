@@ -15,6 +15,7 @@ import calculator from "../assets/calculator.png";
 import bank from "../assets/bank.png";
 import dice from "../assets/dice.png";
 import surgeon from "../assets/surgeon.png";
+import metalc from "../assets/metalc.png";
 
 const data = [
     {
@@ -28,7 +29,7 @@ const data = [
       name: `Aaargh! (Web Game)`,
       desc: `Game inspired by Flappy Bird. The player is controlled by making weird noises like "aaaah" or "aargh".`,
       link: `https://www.maybetarun.in/projects/aaargh`,
-      skills: [`React`],
+      skills: [`React.js`],
       image: aaargh
     },
     {
@@ -37,6 +38,13 @@ const data = [
       link: `https://github.com/MaybeTarun/Cognify`,
       skills: [`Kotlin`, `XML`],
       image: cognify
+    },
+    {
+      name: `Metalc Productions (Startup Website)`,
+      desc: `Been working for a startup as their lead Web Developer.`,
+      link: `https://www.metalcproductions.com`,
+      skills: [`Next.js`, `TailwindCSS`],
+      image: metalc
     },
     {
       name: `Foresty (Web App)`,
@@ -49,21 +57,21 @@ const data = [
       name: `Doctor Portfolio (Freelance Project)`,
       desc: `Designed and Developed a Responsive Portfolio Website for a Doctor as part of my freelance career.`,
       link: `https://www.surgeonrkl.com`,
-      skills: [`React`, `TailwindCSS`],
+      skills: [`React.js`, `TailwindCSS`],
       image: surgeon
     },
     {
       name: `Roshni Sinks (Freelance Project)`,
       desc: `An E-Commerce platform for a manufacturing business "Roshni". Still under development`,
       link: `https://roshnisinks.vercel.app/`,
-      skills: [`React`],
+      skills: [`React.js`],
       image: roshni
     },
     {
       name: `Finance Tracker (Web App)`,
       desc: `An MERN stack application for tracking personal finances. Uses Clerk for user management`,
       link: `https://financetracker-neon.vercel.app/`,
-      skills: [`React`, `MongoDB`],
+      skills: [`React.js`, `MongoDB`],
       image: finance
     },
     {

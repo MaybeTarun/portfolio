@@ -130,6 +130,10 @@
     border-radius: 50px;
     text-decoration: none;
     transition: transform 0s ease;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn.hover-style-1:hover {
