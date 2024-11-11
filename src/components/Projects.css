@@ -145,3 +145,12 @@
         height: 30px;
     }
 }
+
+.hover-image {
+    width: auto;
+    height: 200px;
+    pointer-events: none; 
+    z-index: 1000; 
+    transition-duration: 0s;
+}
+  
