@@ -34,16 +34,19 @@ const Projects = () => {
   }, []);
 
   const handleMouseEnter = (name, index) => {
-    if (name === 'Spree') {
+    if (name === 'Spree (Web App)') {
       setHoveredCardName(name);
     }
-    if (name === 'Sentiment Analyzer') {
+    if (name === 'Sentiment Analyzer (Python Project)') {
       setShowPopup(true);
     }
-    if (name === 'Dice Simulator') {
+    if (name === 'Dice Simulator (Python Project)') {
       const randomImage = diceImages[Math.floor(Math.random() * diceImages.length)];
       setDiceImage(randomImage);
     }
+    if (name === 'Payback-to-ya (NPM Package)') {
+      setHoveredCardName(name);
+  }
     if (videoRefs.current[index]) {
       videoRefs.current[index].play().catch(error => {
         console.log('Failed to play the video:', error);
@@ -66,7 +69,7 @@ const Projects = () => {
   };
 
   const isVideo = (src) => {
-    const videoExtensions = ['.mp4', '.webm', '.ogg'];
+    const videoExtensions = ['.mp4'];
     return videoExtensions.some(extension => src.endsWith(extension));
   };
 
@@ -110,15 +113,18 @@ const Projects = () => {
               ) : (
                 <img
                   src={
-                    item.name === 'Spree' && hoveredCardName === 'Spree'
+                    item.name === 'Spree (Web App)' && hoveredCardName === 'Spree (Web App)'
                       ? spree2
-                      : item.name === 'Dice Simulator' && diceImage
+                      : item.name === 'Dice Simulator (Python Project)' && diceImage
                       ? diceImage
                       : item.image
                   }
                   alt={item.name}
                   onMouseEnter={() => handleMouseEnter(item.name, index)}
                   onMouseLeave={() => handleMouseLeave(index)}
+                  style={{
+                    opacity: item.name === 'Payback-to-ya (NPM Package)' && hoveredCardName === 'Payback-to-ya (NPM Package)' ? 0.3 : 1
+                  }}
                 />
               )}
             </div>
