@@ -22,12 +22,12 @@ const Fact = () => {
 
   return (
     <motion.div className='fact' initial={{scale:0.8}} whileInView={{scale:1}}>
-      <p>Run</p>
+      <p className='facttext'>Run</p>
       <div className='copy'>
         <input type='text' value={'npx know-about tarun'} readOnly />
         <button onClick={copyToClipboard}><img src={copy} alt='npx know-about tarun' /></button>
       </div>
-      <p>in your terminal</p>
+      <p className='facttext'>in your terminal</p>
       {showPopup && <div className='popup'>Copied!</div>}
     </motion.div>
   )

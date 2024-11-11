@@ -9,8 +9,13 @@
     text-align: center;
     flex-direction: column;
     font-size: 15px;
-    top: -710vh;
+    top: -755vh;
     left: 80vw;
+    overflow: visible;
+}
+
+.facttext {
+    overflow: visible;
 }
 
 .copy {
@@ -22,6 +27,7 @@
     height: fit-content;
     padding: 0px 5px;
     border-radius: 10px;
+    overflow: visible;
 }
 
 .copy input {
