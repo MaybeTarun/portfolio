@@ -26,6 +26,13 @@ const data = [
       image: concrete
     },
     {
+      name: `Metalc Productions (Startup Website)`,
+      desc: `A service based starup which makes projects for brands and agencies.`,
+      link: `https://www.metalcproductions.com`,
+      skills: [`Next.js`, `TailwindCSS`],
+      image: metalc
+    },
+    {
       name: `Aaargh! (Web Game)`,
       desc: `Game inspired by Flappy Bird. The player is controlled by making weird noises like "aaaah" or "aargh".`,
       link: `https://www.maybetarun.in/projects/aaargh`,
@@ -38,13 +45,6 @@ const data = [
       link: `https://github.com/MaybeTarun/Cognify`,
       skills: [`Kotlin`, `XML`],
       image: cognify
-    },
-    {
-      name: `Metalc Productions (Startup Website)`,
-      desc: `Been working for a startup as their lead Web Developer.`,
-      link: `https://www.metalcproductions.com`,
-      skills: [`Next.js`, `TailwindCSS`],
-      image: metalc
     },
     {
       name: `Foresty (Web App)`,
@@ -62,7 +62,7 @@ const data = [
     },
     {
       name: `Roshni Sinks (Freelance Project)`,
-      desc: `An E-Commerce platform for a manufacturing business "Roshni". Still under development`,
+      desc: `An E-Commerce platform for a manufacturing business "Roshni". Currently on Hold`,
       link: `https://roshnisinks.vercel.app/`,
       skills: [`React.js`],
       image: roshni
@@ -75,11 +75,11 @@ const data = [
       image: finance
     },
     {
-      name: `Know-About (NPM Package)`,
-      desc: `Built an NPM Package that gives you info about people when you run the command "npx know-about [name]". Currently consists of only 2-3 people's info but I plan to add more, so if you want to add yours too just dm me on twitter ;)`,
-      link: `https://www.npmjs.com/package/know-about`,
-      skills: [`Node`],
-      image: knowabout
+      name: `Holostry (Android App)`,
+      desc: `Developed this project for a 24hr Hackathon - MOZOHACK with my friends. It consists of 3D holographic model of carbon compounds which students can use to visualize the compounds in 3 dimensions making it easier for them to understand.`,
+      link: `https://github.com/MaybeTarun/Holostry`,
+      skills: [`Dart`, `Blender`],
+      image: holostry
     },
     {
       name: `Image Colorizer (Web App)`,
@@ -89,11 +89,11 @@ const data = [
       image: colorizer
     },
     {
-      name: `Holostry (Android App)`,
-      desc: `Developed this project for a 24hr Hackathon - MOZOHACK with my friends. It consists of 3D holographic model of carbon compounds which students can use to visualize the compounds in 3 dimensions making it easier for them to understand.`,
-      link: `https://github.com/MaybeTarun/Holostry`,
-      skills: [`Dart`, `Blender`],
-      image: holostry
+      name: `Know-About (NPM Package)`,
+      desc: `Built an NPM Package that gives you info about people when you run the command "npx know-about [name]". Currently consists of only 2-3 people's info but I plan to add more, so if you want to add yours too just dm me on twitter ;)`,
+      link: `https://www.npmjs.com/package/know-about`,
+      skills: [`Node`],
+      image: knowabout
     },
     {
       name: `Payback-to-ya (NPM Package)`,
