@@ -16,6 +16,7 @@ import bank from "../assets/bank.png";
 import dice from "../assets/dice.png";
 import surgeon from "../assets/surgeon.png";
 import metalc from "../assets/metalc.png";
+import revo from "../assets/revo.png";
 
 const data = [
     {
@@ -45,6 +46,13 @@ const data = [
       link: `https://github.com/MaybeTarun/Cognify`,
       skills: [`Kotlin`, `XML`],
       image: cognify
+    },
+    {
+      name: `Revo (NPM Package)`,
+      desc: `A custom React project setup tool built on top of Vite. It’s designed to streamline your workflow by providing a clean project structure, pre-configured with Tailwind CSS and Framer Motion, so you can focus on building amazing applications.`,
+      link: `https://www.npmjs.com/package/create-revo`,
+      skills: [`React.js`, `node`],
+      image: revo
     },
     {
       name: `Foresty (Web App)`,
