@@ -17,6 +17,7 @@ import dice from "../assets/dice.png";
 import surgeon from "../assets/surgeon.png";
 import metalc from "../assets/metalc.png";
 import revo from "../assets/revo.png";
+import bento from "../assets/bento.png";
 
 const data = [
     {
@@ -60,6 +61,13 @@ const data = [
       link: `https://github.com/MaybeTarun/Foresty`,
       skills: [`HTML`, `CSS`, `Javascript`, `Shell`],
       image: foresty
+    },
+    {
+      name: `BentoGen (Web App)`,
+      desc: `Bentogen is a project that lets you create random bento grid designs with live previews and code export. It also provides with some ready-made templates to help you design better.`,
+      link: `https://bento-gen.vercel.app/`,
+      skills: [`React.js`, `TailwindCSS`],
+      image: bento
     },
     {
       name: `Doctor Portfolio (Freelance Project)`,
