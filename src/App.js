@@ -25,14 +25,42 @@ import music from './assets/bgm.mp3';
 import cat from './assets/cat.gif';
 import { useState, useEffect } from 'react';
 
+const getShouldShowPreloader = () => {
+  const data = localStorage.getItem('preloader_shown');
+  if (!data) return true;
+  try {
+    const { value, expiry } = JSON.parse(data);
+    if (value !== true) return true;
+    if (Date.now() > expiry) return true;
+    return false;
+  } catch {
+    return true;
+  }
+};
+
+const setPreloaderShown = () => {
+  const expiry = Date.now() + 60 * 60 * 1000; // 1 hour
+  localStorage.setItem('preloader_shown', JSON.stringify({ value: true, expiry }));
+};
+
 const App = () => {
+  const [showPreloader, setShowPreloader] = useState(getShouldShowPreloader());
+
+  useEffect(() => {
+    if (showPreloader) {
+      setPreloaderShown();
+      const timer = setTimeout(() => setShowPreloader(false), 5500); // match Preloader duration
+      return () => clearTimeout(timer);
+    }
+  }, [showPreloader]);
+
   return (
     <Router>
       <Analytics />
       <Routes>
         <Route path="/" element={
           <>
-            <Preloader />
+            {showPreloader && <Preloader />}
             <Bg />
             <ParallaxImage />
             <div className='cv'>

@@ -43,3 +43,121 @@
         font-size: 10px;
     }
 }
+
+.skills-physics-container {
+  width: var(--skills-container-width, 1100px);
+  height: var(--skills-container-height, 600px);
+  position: relative;
+  background: #0B666A;
+  border: 5px solid #EEE2DE;
+  overflow: hidden;
+  padding: 18px;
+  box-sizing: border-box;
+  max-width: 1100px;
+  max-height: 600px;
+  min-width: 320px;
+  min-height: 220px;
+}
+
+.skills-scroll-notice {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.7;
+  z-index: 10;
+  padding: 8px 12px;
+  pointer-events: none;
+}
+
+.physics-skillbar {
+  background: #fff;
+  color: #111;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: 600;
+  pointer-events: auto;
+  border-radius: var(--skillbar-radius, 999px);
+  border: var(--skillbar-border, 3px solid #35A29F);
+  font-size: var(--skillbar-font-size, 20px);
+  padding: var(--skillbar-padding, 8px 32px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: box-shadow 0.2s;
+  cursor: grab;
+}
+
+.physics-skillbar:active {
+  cursor: grabbing;
+}
+
+@media (max-width: 900px) {
+  .skills-physics-container {
+    width: 95vw;
+    height: 60vw;
+    padding: 5px;
+  }
+  .physics-skillbar {
+    border-width: 2px;
+    font-size: 14px;
+    padding: 4px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-physics-container {
+    width: 95vw;
+    height: 60vw;
+    padding: 2px;
+  }
+  .physics-skillbar {
+    border-width: 1px;
+    font-size: 10px;
+    padding: 2px 10px;
+  }
+}
+
+.skillbar.physics-skillbar {
+  padding: 0;
+  margin: 0;
+}
+
+.skills-categories-banner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffd700;
+  font-size: 15px;
+  opacity: 0.9;
+  z-index: 10;
+  padding: 10px 12px;
+  pointer-events: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  min-width: 350px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 18px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  .skills-categories-banner {
+    font-size: 7.5px;
+    min-width: 180px;
+    padding: 6px 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
